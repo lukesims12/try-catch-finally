@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        title Flash Cards - Sandbox
+    body
+        header
+            h1 Flash Cards - Sandbox
+        section#content
+            table
+                each name in names
+                    tr
+                        td(style={border: "solid 1px black"})= name[0]
+                        td(style={border: "solid 1px black"})= name[1]                        
+        footer
+            p An app to help you study
