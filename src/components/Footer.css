@@ -1,0 +1,9 @@
+#main-footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+    border-top: solid .5px grey;
+    padding: 12px 0;
+    font-weight: 300;
+}

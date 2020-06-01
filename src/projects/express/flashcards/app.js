@@ -4,11 +4,6 @@ const cookieParser = require('cookie-parser');
 
 const app = express();
 
-const names = [
-    ["Luke", "Sims"],
-    ["Adam", "Sims"]
-]
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/static', express.static('public'))
@@ -43,6 +38,6 @@ app.use((err, req, res, next) => {
     res.render('error');
 });
 
-app.listen(3000, () => {
-    console.log("Running on localhost:3000.")
+app.listen(4000, () => {
+    console.log("Running on localhost:4000")
 });
