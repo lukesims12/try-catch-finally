@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Header'
 import Language from './components/Language';
-import Footer from './components/Footer';
+//import Footer from './components/Footer';
 
 import './App.css';
 
@@ -32,18 +32,19 @@ export default class App extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="container-outer">
                 <Header />
-                <section id="lang-outer">
-                    {this.state.langauges.map((item, index) => 
-                        <Language
-                            key={item.key.toString()}
-                            name={item.name}
-                            icon={item.icon}
-                        />
-                    )}
-                </section>
-                <Footer />
+                {/* <div className="container">
+                    <section id="lang-outer">
+                        {this.state.langauges.map((item, index) => 
+                            <Language
+                                key={item.key.toString()}
+                                name={item.name}
+                                icon={item.icon}
+                            />
+                        )}
+                    </section>
+                </div> */}
             </div>
         );
     }
