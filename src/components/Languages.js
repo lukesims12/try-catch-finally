@@ -1,7 +1,28 @@
 import React, { Component } from 'react';
 import '../components/Language.css';
 
-export default class Languages extends Component {    
+export default class Languages extends Component {   
+    
+    constructor(props) {
+        super(props);
+        this.state = {
+            reactProjects: [
+                {
+                    key: 1,
+                    name: "My Website",
+                    link: "https://lukesims.me"
+                }
+            ],
+            nodeProjects: [
+                {
+                    key: 2,
+                    name: "Flashcards App",
+                    link: "http://localhost:4000"
+                }
+            ]
+        }
+    }
+
     render() {
         return(
             <div className="main-lang-div">
@@ -11,6 +32,10 @@ export default class Languages extends Component {
                         <div className="lang-title">React</div>
                         <div><img className="arrow-down" alt="arrow-down" src={require('../assets/img/arrow.png')} /></div>
                     </div>
+                    <div><img className="browser-window" alt="browser-window" src={require('../assets/img/browser-window.png')} /></div>
+                    {this.state.reactProjects.map((item, index) =>
+                        <a href={item.link} target="_blank" rel="noopener noreferrer" >{item.name}</a> 
+                    )}
                 </div>
                 <div className="js-svg-container">
                     <svg viewBox="0 0 128 128" className="js-svg" align="center" width="450" height="450">
@@ -31,6 +56,10 @@ export default class Languages extends Component {
                         </div>
                         <div><img className="arrow-down" alt="arrow-down" src={require('../assets/img/arrow.png')} /></div>
                     </div>
+                    <div><img className="browser-window" alt="browser-window" src={require('../assets/img/browser-window.png')} /></div>
+                    {this.state.nodeProjects.map((item, index) =>
+                        <a href={item.link} target="_blank" rel="noopener noreferrer" >{item.name}</a> 
+                    )}
                 </div>
             </div>
         );
