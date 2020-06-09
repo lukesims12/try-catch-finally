@@ -14,3 +14,14 @@
     background-color: #EFDC4F;
 }
 
+.social-icons-div {
+    float: right;
+}
+
+.social-icon {
+    font-size: 40px;
+    margin: 0 20px;
+    position: relative;
+    top: -75px
+}
+
