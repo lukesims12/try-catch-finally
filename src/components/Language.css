@@ -1,5 +1,6 @@
 .main-lang-div {
-    margin: 24px 0;
+    margin: 100px 0;
+    width: 100%;
 }
 
 .lang-div {
@@ -10,6 +11,7 @@
 
 .lang-icon {
     font-size: 96px;
+    transition: transform .5s;
 }
 
 .lang-icon:hover {
@@ -19,4 +21,32 @@
 .arrow-down {
     margin: 8px 0;
     height: 100px;
+}
+
+.col-1, .col-3 {
+    width: 33%;
+    float: left;
+}
+
+.js-svg-container {
+    text-align: center;
+    width: 33%;
+    float: left;
+}
+
+.js-svg {
+    transition: transform .5s;
+}
+
+.js-svg:hover {
+    transform: scale(1.1);
+}
+
+.lang-div-inner {
+    float: left;
+    margin: 0 20px;
+}
+
+.lang-title {
+    margin: 6px 0;
 }
