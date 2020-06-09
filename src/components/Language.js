@@ -7,6 +7,7 @@ export default class Language extends Component {
         return(
             <div className="lang-div">
                 <i className={icon + " lang-icon"}></i>
+                <div><img className="arrow-down" alt="arrow-down" src={require('../assets/img/arrow.png')} /></div>
             </div>
         );
     }

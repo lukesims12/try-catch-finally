@@ -1,9 +1,3 @@
 #lang-outer {
     text-align: center;
-    position: relative;
-    top: -100px;
-}
-
-.container {
-    border: solid 1px black;
 }

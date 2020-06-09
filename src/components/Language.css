@@ -1,3 +1,7 @@
+.main-lang-div {
+    margin: 24px 0;
+}
+
 .lang-div {
     display: inline-block;
     margin: 0 8px;
@@ -6,4 +10,13 @@
 
 .lang-icon {
     font-size: 96px;
+}
+
+.lang-icon:hover {
+    transform: scale(1.1);
+}
+
+.arrow-down {
+    margin: 8px 0;
+    height: 100px;
 }
